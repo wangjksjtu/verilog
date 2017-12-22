@@ -37,7 +37,7 @@
 - %d, %b, %B, %m(显示层次名), %v(显示强度), %e(科学计数), %T(时间)
 - $monitor $display $stop(暂停结束仿真)
 - \`include和\`define
-- `\`include header.v`
+- `include header.v`
 
 # Chapter4
 ## 模块
