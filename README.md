@@ -23,7 +23,7 @@
 - 寄存器不需要驱动源，也不需要时钟信号，在仿真的任何阶段可直接赋值
 - 寄存器也可signed
 - 驱动由强到弱supply, strong, pull, large, weak, medium, small, highz
-- 向量[#high:#low]与[#low,#high]以及[<starting_bit>+:width]从起始位开始，位宽为width
+- 向量[#high:#low]与[#low:#high]以及[<starting_bit>+:width]从起始位开始，位宽为width
 - integer, real, time. 注意智能仿真，而integer，real是一种通用寄存器数据类型
 - integer是有符号数. reg是补码保存，取出来无符号，而integer一直有符号
 - time最小64位 $time可得当前时间
