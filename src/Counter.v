@@ -6,7 +6,7 @@ module counter #(parameter N=4) (output reg [N-1:0] count,
             count <= 0;
         end
         else begin
-            count <= count ＋ 1;
+            count <= count + 1;
         end
     end
 endmodule
