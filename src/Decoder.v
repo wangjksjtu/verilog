@@ -46,7 +46,7 @@ module dec6seg (output reg [0:6] seg,
                 7:  seg = 7'b111_0000;
                 8:  seg = 7'b111_1111;
                 9:  seg = 7'b111_1011;
-                default: ;
+                default: seg = 7'b000_0000;
             endcase
         else seg = 7'b000_0000;
     end
