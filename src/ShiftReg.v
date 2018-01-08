@@ -41,9 +41,7 @@ module filter (output reg y,
             if (&q[3:1]) y <= 1'b1;
             else begin
                 if (~|q[3:1]) y <= 1'b0;
-                else begin
-                    q <= {q[2:0], din}
-                end
+                q <= {q[2:0], din};
             end
         end
     end
