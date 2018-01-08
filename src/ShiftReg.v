@@ -18,7 +18,7 @@ module UShiftReg #(parameter N=8) (output reg [N-1:0] q,
         if (~rst_n) q <= 0;
         else begin
             case (s)
-                2'b01: q <= {Rin, q[N-2:0]);
+                2'b01: q <= {Rin, q[N-1:1]);
                 2'b10: q <= {q[N-2:0], Lin};
                 2'b11: q <= d;
                 default: ;
